@@ -51,8 +51,8 @@ pip install -r requirements.txt
 ### Dataset Setup
 This project uses the **Amazon Reviews 2023 — Grocery & Gourmet Food dataset (McAuley Lab)**.  
 Because the dataset is extremely large (~14M reviews), all review and metadata files are stored in **parquet chunks**:
-clean_data/
-top_data/
+- clean_data/
+- top_data/
 
 Chunked ingestion is performed using **pandas + PyArrow** for scalable, memory-efficient processing.
 
