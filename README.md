@@ -44,7 +44,6 @@ source env/bin/activate     # Mac/Linux
 # env\Scripts\activate      # Windows
 
 ### Install Dependencies
-```bash
 pip install -r requirements.txt
 
 ### Dataset Setup
@@ -57,7 +56,7 @@ Chunked ingestion is performed using **pandas + PyArrow** for scalable, memory-e
 
 ### Run the Project
 (write)
-
+```
 ---
 
 ## 🏗️ **Project Overview**
