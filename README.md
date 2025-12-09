@@ -190,7 +190,7 @@ This project is for **academic and research purposes** as part of the Break Thro
 
 ---
 
-## 📄 **References** (Optional but encouraged)
+## 📄 **References** 
 
 Amazon Reviews Dataset — McAuley Lab  
 - Hugging Face Transformers Documentation  
@@ -199,7 +199,7 @@ Amazon Reviews Dataset — McAuley Lab
 
 ---
 
-## 🙏 **Acknowledgements** (Optional but encouraged)
+## 🙏 **Acknowledgements** 
 
 Special thanks to:
 - **Veo Chae**, Nestlé Senior Data Scientist and Challenge Advisor  
