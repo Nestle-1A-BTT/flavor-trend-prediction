@@ -58,7 +58,7 @@ Chunked ingestion is performed using **pandas + PyArrow** for scalable, memory-e
 
 ### Run the Project
 (write)
-```
+
 ---
 
 ## 🏗️ **Project Overview**
