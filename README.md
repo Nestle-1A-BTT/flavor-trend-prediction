@@ -34,7 +34,7 @@
 ```bash
 git clone https://github.com/Nestle-1A-BTT/flavor-trend-prediction.git
 cd flavor-trend-prediction
-
+```
 ## Setup and Installation
 
 ### Create and Activate Environment
@@ -42,9 +42,11 @@ cd flavor-trend-prediction
 python3 -m venv env
 source env/bin/activate     # Mac/Linux
 # env\Scripts\activate      # Windows
-
+```
 ### Install Dependencies
+```bash
 pip install -r requirements.txt
+```
 
 ### Dataset Setup
 This project uses the **Amazon Reviews 2023 — Grocery & Gourmet Food dataset (McAuley Lab)**.  
