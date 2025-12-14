@@ -163,7 +163,7 @@ The ultimate goal is to **accelerate product development** and reduce failed pro
 |---------------------|-------------------------------------------|
 | VADER               | Simple baseline; limited performance (Macro F1 Score = 0.54)      |
 | Logistic Regression | Strong classical model; (Macro F1 Score = 0.74)   |
-| RoBERTa             | Best performance across all sentiment classes |
+| RoBERTa             | Best performance across all sentiment classes; (Revealed top 3 emerging flavors:  0.673898 for Whole Bean Coffee, 0.532153 for Cookies and Cream, 0.513217 for Caramel) |
 
 ### Key Insights
 - RoBERTa significantly outperformed all baselines in macro F1.  
