@@ -29,6 +29,11 @@
 ---
 
 ## 👩🏽‍💻 **Setup and Installation**
+### About the files
+- clean_data: The entire dataset after filtering verified purchases
+- top_data: The filtered dataset with verified purchases and the top 200 mentioned flavors
+- Amazon_DataFrame.ipynb: An end-to-end data pipeline and analysis notebook that takes raw Amazon grocery reviews and turns them into a ranked list of “emerging food flavors” based on both popularity trends and customer sentiment
+- Baseline_Models.ipynb: Builds baseline sentiment analysis models on Amazon food reviews by cleaning text, labeling sentiment from ratings, and handling class imbalance. It evaluates VADER, Logistic Regression, and Naive Bayes models using TF-IDF/count features and reports performance with classification metrics and confusion matrices.
 
 ### Clone the Repository
 ```bash
@@ -43,11 +48,6 @@ python3 -m venv env
 source env/bin/activate     # Mac/Linux
 # env\Scripts\activate      # Windows
 ```
-### Install Dependencies
-```bash
-pip install -r requirements.txt
-```
-
 ### Dataset Setup
 This project uses the **Amazon Reviews 2023 — Grocery & Gourmet Food dataset (McAuley Lab)**.  
 Because the dataset is extremely large (~14M reviews), all review and metadata files are stored in **parquet chunks**:
@@ -57,7 +57,8 @@ Because the dataset is extremely large (~14M reviews), all review and metadata f
 Chunked ingestion is performed using **pandas + PyArrow** for scalable, memory-efficient processing.
 
 ### Run the Project
-(write)
+- run Amazon_DataFrame.ipynb to know emerging food flavors 
+- run Baseline_models to see performance of other models
 
 ---
 
@@ -160,8 +161,8 @@ The ultimate goal is to **accelerate product development** and reduce failed pro
 
 | Model                | Summary                                   |
 |---------------------|-------------------------------------------|
-| VADER               | Simple baseline; limited performance      |
-| Logistic Regression | Strong classical model; solid macro F1    |
+| VADER               | Simple baseline; limited performance (Macro F1 Score = 0.54)      |
+| Logistic Regression | Strong classical model; (Macro F1 Score = 0.74)   |
 | RoBERTa             | Best performance across all sentiment classes |
 
 ### Key Insights
@@ -188,7 +189,7 @@ The ultimate goal is to **accelerate product development** and reduce failed pro
 
 ## 📝 **License**
 
-This project is for **academic and research purposes** as part of the Break Through Tech AI Studio Program. An open-source license may be added later with Challenge Advisor approval.  
+This project is for **academic and research purposes** as part of the Break Through Tech AI Studio Program. This project uses the MIT License to enable open academic and industry reuse of the code while maintaining attribution and minimizing legal restrictions.
 
 ---
 
