@@ -4,16 +4,16 @@
 
 ### 👥 **Team Members**
 
-| Name               | GitHub Handle      | Contribution                                            |
-|--------------------|--------------------|---------------------------------------------------------|
-| Douglas Tanyanyiwa | @douglast          | Advanced modeling, time-series integration              |
-| Maryam Ahmed       | @maryama           | Project coordination, presentation preparation          |
-| Mei Zhu            | @meizhu            | Advanced model building (BERT/Transformers), EDA        |
-| Monica Zhang       | @monicaz           | EDA, data understanding                                 |
-| Ritika Shrestha    | @ritikash          | EDA and insights generation                             |
-| Saanika Medishetty | @saanika           | Data preprocessing, model evaluation                    |
-| Sanskriti Malakar  | @sanskritimalakar  | Advanced model evaluation, README development           |
-| Siena Rahman       | @sienarahman       | Data preprocessing, baseline models, slide development  |
+| Name               | GitHub Handle      | Contribution                                                                  |
+|--------------------|--------------------|-------------------------------------------------------------------------------|
+| Douglas Tanyanyiwa | @douglast          | Flavor Analysis, Time-Series Analysis, RoBERTa Model Development \& Evaluation|
+| Maryam Ahmed       | @maryama           | Project Coordination                                                          |
+| Mei Zhu            | @meizhu            |                                                                               |
+| Monica Zhang       | @monicaz           |                                                                               |
+| Ritika Shrestha    | @ritikash          |                                                                               |      
+| Saanika Medishetty | @saanika           | Data Preprocessing                                                            |
+| Sanskriti Malakar  | @sanskritimalakar  | Model Evaluation, README Development                                          |
+| Siena Rahman       | @sienarahman       | Data Preprocessing, VADER \& Logistic Regression Models, Project Coordination |
 
 
 ---
@@ -57,8 +57,8 @@ Because the dataset is extremely large (~14M reviews), all review and metadata f
 Chunked ingestion is performed using **pandas + PyArrow** for scalable, memory-efficient processing.
 
 ### Run the Project
-- run Amazon_DataFrame.ipynb to know emerging food flavors 
-- run Baseline_models to see performance of other models
+- Run Amazon_DataFrame.ipynb to run flavor analysis and our RoBERTa model.
+- Run Baseline_Models to see performance of VADER and Logistic Regression.
 
 ---
 
@@ -116,8 +116,6 @@ The ultimate goal is to **accelerate product development** and reduce failed pro
 
 ### Preprocessing Steps
 - Text cleaning (lowercasing, punctuation removal)  
-- Stopword removal  
-- Lemmatization and tokenization  
 - Vectorization using TF-IDF and count vectors  
 - Handling class imbalance  
 - Chunk-wise reading for memory-efficient large-scale training  
@@ -173,17 +171,23 @@ The ultimate goal is to **accelerate product development** and reduce failed pro
 
 ---
 
+## 💭 Discussion and Reflection
+- Our team experimented with a few baseline models that didn't make the final cut. Naive Bayes was a model that we implemented but did not include in our final presentation, mainly due to poorer performance and shifting focus to the RoBERTa model.
+- Our team has overcame the challenge of the replacement of our Challenge Advisor during Fall AI Studio, which allowed us to grow as a team and recognize where we fell short in terms of project management.
+- Including the comparison of VADER and Logistic Regression in our analysis was insightful, we were able to visualize the effectiveness of these sentiment classification models and it was instructional in our data understanding.
+- The RoBERTa flavor trend analysis was incredibly insightful and relevant to our project goal, allowing us to determing the top 3 emerging flavors the timeframe of the dataset.
+
 ## 🚀 **Next Steps**
 ### Technical Enhancements
-- Add geographic/regional trend analysis using reviewer metadata  
-- Incorporate newer Amazon review data (2024–2025)  
-- Improve multi-flavor extraction with aspect-based sentiment analysis  
-- Develop embedding-based flavor similarity to predict novel flavor combinations  
+- Add geographic/regional trend analysis using reviewer metadata.
+- Incorporate newer Amazon review data (2024–2025).  
+- Improve multi-flavor extraction with aspect-based sentiment analysis.  
+- Develop embedding-based flavor similarity to predict novel flavor combinations.  
 
 ### Business/Product Extensions
-- Build a **Flavor Radar Dashboard** for Nestlé R&D teams  
-- Integrate additional data sources (social media, food blogs, trend reports)  
-- Automate monthly flavor trend reports and monitoring pipelines
+- Build a **Flavor Radar Dashboard** for Nestlé R&D teams.  
+- Integrate additional data sources (social media, food blogs, trend reports).  
+- Automate monthly flavor trend reports and monitoring pipelines.
 
 ---
 
@@ -195,10 +199,10 @@ This project is for **academic and research purposes** as part of the Break Thro
 
 ## 📄 **References** 
 
-Amazon Reviews Dataset — McAuley Lab  
-- Hugging Face Transformers Documentation  
-- Scikit-learn User Guide  
-- PyArrow and Parquet Documentation
+- [Amazon Reviews Dataset — McAuley Lab]([https://www.genome.gov/](https://huggingface.co/datasets/McAuley-Lab/Amazon-Reviews-2023))
+- [Hugging Face Transformers Documentation](https://huggingface.co/docs/transformers/en/index)
+- [Scikit-learn User Guide](https://scikit-learn.org/stable/user_guide.html)  
+- [PyArrow and Parquet Documentation](https://arrow.apache.org/docs/python/api/formats.html)
 
 ---
 
