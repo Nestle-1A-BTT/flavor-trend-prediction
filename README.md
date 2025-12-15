@@ -30,10 +30,10 @@
 
 ## 👩🏽‍💻 **Setup and Installation**
 ### About the files
-- `clean_data`: The entire dataset after filtering verified purchases
-- `top_data`: The filtered dataset with verified purchases and the top 200 mentioned flavors
-- `Amazon_DataFrame.ipynb`: An end-to-end data pipeline and analysis notebook that takes raw Amazon grocery reviews and turns them into a ranked list of “emerging food flavors” based on both popularity trends and customer sentiment
-- `Baseline_Models.ipynb`: Builds baseline sentiment analysis models on Amazon food reviews by cleaning text, labeling sentiment from ratings, and handling class imbalance. It evaluates VADER, Logistic Regression, and Naive Bayes models using TF-IDF/count features and reports performance with classification metrics and confusion matrices.
+- [clean_data](clean_data): The entire dataset after filtering verified purchases
+- [top_data](top_data): The filtered dataset with verified purchases and the top 200 mentioned flavors
+- [Amazon_DataFrame.ipynb](Amazon_DataFrame.ipynb): An end-to-end data pipeline and analysis notebook that takes raw Amazon grocery reviews and turns them into a ranked list of “emerging food flavors” based on both popularity trends and customer sentiment
+- [Baseline_Models.ipynb](Baseline_Models.ipynb): Builds baseline sentiment analysis models on Amazon food reviews by cleaning text, labeling sentiment from ratings, and handling class imbalance. It evaluates VADER, Logistic Regression, and Naive Bayes models using TF-IDF/count features and reports performance with classification metrics and confusion matrices.
 
 ### Clone the Repository
 ```bash
@@ -57,8 +57,8 @@ Because the dataset is extremely large (~14M reviews), all review and metadata f
 Chunked ingestion is performed using **pandas + PyArrow** for scalable, memory-efficient processing.
 
 ### Run the Project
-- Run `Amazon_DataFrame.ipynb` to run flavor analysis and our RoBERTa model.
-- Run `Baseline_Models.ipynb` to see performance of VADER and Logistic Regression.
+- Run [Amazon_DataFrame.ipynb](Amazon_DataFrame.ipynb) to run flavor analysis and our RoBERTa model.
+- Run [Baseline_Models.ipynb](Baseline_Models.ipynb) to see performance of VADER and Logistic Regression.
 
 ---
 
@@ -122,14 +122,35 @@ The ultimate goal is to **accelerate product development** and reduce failed pro
 
 ### EDA Insights
 
-<img width="876" height="470" alt="Image" src="https://github.com/user-attachments/assets/b805ebea-f0a2-407c-b700-244019c55c1a" />
+<table>
+  <tr>
+    <td width="50%">
+      <img width="438" height="235" alt="Image"
+           src="https://github.com/user-attachments/assets/b805ebea-f0a2-407c-b700-244019c55c1a" />
+    </td>
+    <td width="50%">
+      <ul>
+        <li>There is a significant class imbalance, with a disproportionately high concentration of positive reviews.</li>
+      </ul>
+    </td>
+  </tr>
+</table>
 
-- There is a significant class imbalance, with a disproportionately high concentration of positive reviews.
 
-<img width="1181" height="590" alt="Image" src="https://github.com/user-attachments/assets/948f3d58-ea52-40cd-8f5d-3a93266afd66" />
-
-- Popularity ≠ growth: Many popular flavors are stable, but not emerging in terms of growth rate.
-- Seasonal patterns observed (e.g., pumpkin spice spikes in fall).
+<table>
+  <tr>
+    <td width="50%">
+      <img width="590" height="295" alt="Image"
+           src="https://github.com/user-attachments/assets/948f3d58-ea52-40cd-8f5d-3a93266afd66" />
+    </td>
+    <td width="50%">
+      <ul>
+        <li>Popularity ≠ growth: Many popular flavors are stable but not emerging.</li>
+        <li>Seasonal patterns observed (e.g., pumpkin spice spikes in fall).</li>
+      </ul>
+    </td>
+  </tr>
+</table>
 
 ---
 
@@ -177,10 +198,10 @@ The ultimate goal is to **accelerate product development** and reduce failed pro
 ---
 
 ## 💭 Discussion and Reflection
-- Our team experimented with a few baseline models that didn't make the final cut. Naive Bayes was a model that we implemented but did not include in our final presentation, mainly due to poorer performance and shifting focus to the RoBERTa model.
-- Our team has overcame the challenge of the replacement of our Challenge Advisor during Fall AI Studio, which allowed us to grow as a team and recognize where we fell short in terms of project management.
-- Including the comparison of VADER and Logistic Regression in our analysis was insightful, we were able to visualize the effectiveness of these sentiment classification models and it was instructional in our data understanding.
-- The RoBERTa flavor trend analysis was incredibly insightful and relevant to our project goal, allowing us to determing the top 3 emerging flavors the timeframe of the dataset.
+- Our team has overcame the challenge of working with such a large dataset by leveraging PyArrow and splitting the dataset into multiple parquet files to be exported and imported across multiple notebooks, a task that we were previously unfamiliar with.
+- Our team experimented with a few baseline models that didn't make the final cut. Naive Bayes was a model that is seen to be implemented but we did not include in our final presentation, mainly due to poorer performance and shifting focus to the RoBERTa model.
+- Including the comparison of VADER and Logistic Regression in our analysis was beneficial. We were able to visualize the effectiveness of these sentiment classification models and they were instructional in our data understanding.
+- The RoBERTa flavor trend analysis was incredibly insightful and relevant to our project goal, allowing us to determing the top 3 emerging flavors throughout the captured timeframe of the dataset.
 
 ## 🚀 **Next Steps**
 ### Technical Enhancements
