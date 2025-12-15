@@ -122,10 +122,14 @@ The ultimate goal is to **accelerate product development** and reduce failed pro
 
 ### EDA Insights
 
-- Significant class imbalance toward positive reviews  
-- Popularity ≠ growth: many popular flavors are stable, not emerging  
-- Seasonal patterns observed (e.g., pumpkin spice spikes in fall)  
-- Reviews often contain multiple flavor mentions, requiring careful parsing
+<img width="876" height="470" alt="Image" src="https://github.com/user-attachments/assets/b805ebea-f0a2-407c-b700-244019c55c1a" />
+
+- There is a significant class imbalance, with a disproportionately high concentration of positive reviews.
+
+<img width="1181" height="590" alt="Image" src="https://github.com/user-attachments/assets/948f3d58-ea52-40cd-8f5d-3a93266afd66" />
+
+- Popularity ≠ growth: Many popular flavors are stable, but not emerging in terms of growth rate.
+- Seasonal patterns observed (e.g., pumpkin spice spikes in fall).
 
 ---
 
