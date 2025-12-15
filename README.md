@@ -14,6 +14,8 @@
 | Saanika Medishetty | @saanika           | Data Preprocessing                                                            |
 | Sanskriti Malakar  | @sanskritimalakar  | Model Evaluation, README Development                                          |
 | Siena Rahman       | @sienarahman       | Data Preprocessing, VADER \& Logistic Regression Models, Project Coordination |
+| Swagath Babu       | @Swagath18         | **AI Studio Coach**, Technical Mentorship, Presentation Advising              |
+| Veo Chae           | @veochae           | **AI Studio Challenge Advisor**, Project Advising, Business Understanding     |
 
 
 ---
