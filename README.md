@@ -8,9 +8,9 @@
 |--------------------|--------------------|-------------------------------------------------------------------------------|
 | Douglas Tanyanyiwa | @douglast          | Flavor Analysis, Time-Series Analysis, RoBERTa Model Development \& Evaluation|
 | Maryam Ahmed       | @maryama           | Project Coordination                                                          |
-| Mei Zhu            | @meizhu            |                                                                               |
-| Monica Zhang       | @monicaz           |                                                                               |
-| Ritika Shrestha    | @ritikash          |                                                                               |      
+| Mei Zhu            | @meizhu            | Team Member                                                                   |
+| Monica Zhang       | @monicaz           | Team Member                                                                   |
+| Ritika Shrestha    | @ritikash          | Team Member                                                                   |      
 | Saanika Medishetty | @saanika           | Data Preprocessing                                                            |
 | Sanskriti Malakar  | @sanskritimalakar  | Model Evaluation, README Development                                          |
 | Siena Rahman       | @sienarahman       | Data Preprocessing, VADER \& Logistic Regression Models, Project Coordination |
@@ -30,10 +30,10 @@
 
 ## 👩🏽‍💻 **Setup and Installation**
 ### About the files
-- clean_data: The entire dataset after filtering verified purchases
-- top_data: The filtered dataset with verified purchases and the top 200 mentioned flavors
-- Amazon_DataFrame.ipynb: An end-to-end data pipeline and analysis notebook that takes raw Amazon grocery reviews and turns them into a ranked list of “emerging food flavors” based on both popularity trends and customer sentiment
-- Baseline_Models.ipynb: Builds baseline sentiment analysis models on Amazon food reviews by cleaning text, labeling sentiment from ratings, and handling class imbalance. It evaluates VADER, Logistic Regression, and Naive Bayes models using TF-IDF/count features and reports performance with classification metrics and confusion matrices.
+- `clean_data`: The entire dataset after filtering verified purchases
+- `top_data`: The filtered dataset with verified purchases and the top 200 mentioned flavors
+- `Amazon_DataFrame.ipynb`: An end-to-end data pipeline and analysis notebook that takes raw Amazon grocery reviews and turns them into a ranked list of “emerging food flavors” based on both popularity trends and customer sentiment
+- `Baseline_Models.ipynb`: Builds baseline sentiment analysis models on Amazon food reviews by cleaning text, labeling sentiment from ratings, and handling class imbalance. It evaluates VADER, Logistic Regression, and Naive Bayes models using TF-IDF/count features and reports performance with classification metrics and confusion matrices.
 
 ### Clone the Repository
 ```bash
@@ -51,14 +51,14 @@ source env/bin/activate     # Mac/Linux
 ### Dataset Setup
 This project uses the **Amazon Reviews 2023 — Grocery & Gourmet Food dataset (McAuley Lab)**.  
 Because the dataset is extremely large (~14M reviews), all review and metadata files are stored in **parquet chunks**:
-- clean_data/
-- top_data/
+- `clean_data/`
+- `top_data/`
 
 Chunked ingestion is performed using **pandas + PyArrow** for scalable, memory-efficient processing.
 
 ### Run the Project
-- Run Amazon_DataFrame.ipynb to run flavor analysis and our RoBERTa model.
-- Run Baseline_Models to see performance of VADER and Logistic Regression.
+- Run `Amazon_DataFrame.ipynb` to run flavor analysis and our RoBERTa model.
+- Run `Baseline_Models.ipynb` to see performance of VADER and Logistic Regression.
 
 ---
 
@@ -99,7 +99,7 @@ The ultimate goal is to **accelerate product development** and reduce failed pro
   - Time-to-Market Reduction  
   - Reduction in Failed Launches  
   - Innovation Revenue  
-- Establishes the foundation for a long-term **Flavor Radar system** within Nestlé
+- Establishes the foundation for a long-term **Flavor Radar System** within Nestlé
 
 ---
 
@@ -121,6 +121,7 @@ The ultimate goal is to **accelerate product development** and reduce failed pro
 - Chunk-wise reading for memory-efficient large-scale training  
 
 ### EDA Insights
+
 - Significant class imbalance toward positive reviews  
 - Popularity ≠ growth: many popular flavors are stable, not emerging  
 - Seasonal patterns observed (e.g., pumpkin spice spikes in fall)  
@@ -199,7 +200,7 @@ This project is for **academic and research purposes** as part of the Break Thro
 
 ## 📄 **References** 
 
-- [Amazon Reviews Dataset — McAuley Lab]([https://www.genome.gov/](https://huggingface.co/datasets/McAuley-Lab/Amazon-Reviews-2023))
+- [Amazon Reviews Dataset — McAuley Lab](https://huggingface.co/datasets/McAuley-Lab/Amazon-Reviews-2023)
 - [Hugging Face Transformers Documentation](https://huggingface.co/docs/transformers/en/index)
 - [Scikit-learn User Guide](https://scikit-learn.org/stable/user_guide.html)  
 - [PyArrow and Parquet Documentation](https://arrow.apache.org/docs/python/api/formats.html)
